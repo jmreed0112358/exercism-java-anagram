@@ -53,7 +53,7 @@ public class AnagramTest {
 	public void test_match_ValidString_UpperCaseCharacters_ReturnsExpectedResult() {
 		Anagram detector = new Anagram("master");
 		List<String> anagrams = detector.match(Arrays.asList("STREAM", "PIGEON", "maters"));
-		assertThat(anagrams).contains("maters", "stream");
+		assertThat(anagrams).contains("maters", "STREAM");
 	}
 	
 	@Test
