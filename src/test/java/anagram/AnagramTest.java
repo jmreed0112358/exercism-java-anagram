@@ -49,12 +49,12 @@ public class AnagramTest {
         assertThat(anagrams).contains("maters", "stream");
 	}
 	
-	 @Test
-	    public void test_match_ValidString_UpperCaseCharacters_ReturnsExpectedResult() {
-	        Anagram detector = new Anagram("master");
-	        List<String> anagrams = detector.match(Arrays.asList("STREAM", "PIGEON", "maters"));
-	        assertThat(anagrams).contains("maters", "stream");
-	    }
+	@Test
+	public void test_match_ValidString_UpperCaseCharacters_ReturnsExpectedResult() {
+		Anagram detector = new Anagram("master");
+		List<String> anagrams = detector.match(Arrays.asList("STREAM", "PIGEON", "maters"));
+		assertThat(anagrams).contains("maters", "stream");
+	}
 	
 	@Test
 	public void test_match_ValidInput_NonLetterCharacters_ReturnsExpectedResult() {
