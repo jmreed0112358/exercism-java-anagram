@@ -7,7 +7,7 @@ import exceptions.NotImplementedException;
 public class Anagram {
 	
 	public Anagram(String input) {
-		
+		throw new NotImplementedException();
 	}
 	
 	public List<String> match(List<String> words) {
